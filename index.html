@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Imagenes/Logo.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jhon-eduard-campo-camayo-309a26270/" target="_blank"><img src="./Imagenes/imglinkedin.png" class="imglinkedi"></a></li>
+                <li><a href="https://github.com/Jhoncampo" target="_blank"><img src="./Imagenes/imggithub.png" class="imggithub" ></a></li>
+                <li><a href="https://www.instagram.com/chema___ll/" target="_blank"><img src="./Imagenes/imginstagram.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="contenedor-cajatexto">
+                <textarea placeholder="Ingrese texto aquí" class="cajatexto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="./Imagenes/alerta.svg" alt="alerta">
+                <p>Solo letras en minusculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="contenedormunheco">
+                <img src="./Imagenes/Muñeco.svg" alt="Muñeco">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Níngun mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Programa ONE - Oracle Next Education - Colombia Grupo 5</p>
+        <p class="copy">&copy 2023 Copyright Jhon Campo - Derechos reservados</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -3,75 +3,73 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 header{
-    width: 100%;
-    height: 70px;
-}
-.logo{
-    width: 100px;
-    height: 50px;
-    padding-top: 20px;
-    padding-left: 40px;
-}
-nav{
-    position: absolute;
-    top: 15px;
-    right: 280px;
-}
-nav li{
-    display: inline-block;
-    margin: 0 0 0 0;
-}
-nav a{
-    font-size: 22px;
-}
-nav img{
-    width: 45px;
-}
-
-main{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
     display: flex;
+    align-items: center;
+    padding: 16px;
     justify-content: space-between;
 }
+header nav{
+    display: flex;
+}
+header .logo{
+    width: 5rem;
+}
+header nav ul{
+    display: flex;
+    gap: 0.3rem;
+}
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 16px;
+    flex-direction: column;
+}
+main .section1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1rem;
+    justify-content: center;
+    border-radius: 35px;
+    padding: 1rem 0;
+}
 .contenedor-cajatexto{
-    position: absolute;
-    left: 80px;
-    top: 20px;
-    width: 700px;
-    height: 600px;
+    padding: 0 16px;
 }
 .cajatexto{
-    width: 500px;
-    height: 450px;
+    width: 100%;
+    height: 350px;
     border: none;
     background-color: #f4f4fc;
     cursor: pointer;
     color: #0a3871;
-    font-size: 32px;
     font-weight: 400;
+    font-size: 16px;
 }
 .cajatexto:placeholder{
     color: #0a3871;
 }
 ::placeholder{
     color: #0a3871;
+    font-size: 20px;
     text-align: center;
 }
 .alerta{
-    position: absolute;
-    top: 480px;
-    left: 175px;
-    display: flex;
     color: #36393b;
+    display: flex;
+    padding: 0 1rem;
+    gap: 0.5rem;
 }
 .contenedor-botones{
-    position: absolute;
-    top: 500px;
-    height: 80px;
-    left: 110px;
-    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 .btn-encriptar{
     width: 200px;
@@ -82,7 +80,6 @@ main{
     font-size: 16px;
     font-weight: 400;
     border: none;
-    margin-right: 20px;
     cursor: pointer;
     transition: 500ms all;
 }
@@ -107,33 +104,25 @@ main{
     box-shadow: 5px 5px 20px 7px black;
 }
 .section2{
-    display: block;
-    position: relative;
-    width: 300px;
-    height: 560px;
-    top: 10px;
-    right: 20px;
+    width: 100%;
+    overflow: hidden;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 35px;
     box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.50);
 }
 .contenedormunheco{
-    position: absolute;
-    width: 10%;
-    left: 10px;
-    top: 30px;
     box-sizing: border-box;
 }
 .contenedormunheco img{
-    width: 250px;
-    padding: 10px 0;
+    width: 300px;
 }
 .contenedor-parrafo{
-    position: absolute;
     box-sizing: border-box;
-    top: 300px;
-    left: 20px;
 }
 .contenedor-parrafo h3{
     font-size: 24px;
@@ -149,13 +138,9 @@ main{
     padding-top: 20px;
 }
 .contenedor-resultado{
-    position: absolute;
-    bottom: 10px;
-    width: 200px;
-    height: 450px;
-    top: 20px;
+    padding: 1rem 1rem;
+    height: 350px;
     box-sizing: border-box;
-    margin-left: 25px;
 }
 .contenedor-resultado p{
     color: #495057;
@@ -163,16 +148,11 @@ main{
 }
 .contenedor-copiar{
     display: flex;
-    position: absolute;
-    bottom: 400px;
-    top: 450px;
-    background-color: aqua;
-    padding-left: 40px;
+    margin-bottom: 1rem;
 }
 .btn-copiar{
     width: 200px;
     height: 50px;
-    left: 10px;
     border-radius: 24px;
     background-color: #ffffff;
     color: #0a3871;
@@ -180,9 +160,6 @@ main{
     font-weight: 400;
     border: 1px solid #0a3871;
     cursor: pointer;
-    position: relative;
-    top: 50px;
-    right: 4px;
     transition: 500ms;
 }
 .btn-copiar:hover{
@@ -203,36 +180,4 @@ footer{
     padding: 10px;
 }
 
-@media screen and (max-device-width: 480px){
-    header, main, .contenedor-cajatexto, .cajatexto{
-        width: auto;
-    }
-    .logo{
-        padding-left: 4px;
-    }
-    nav{
-        right: 28px;
-        position: absolute;
-
-    }
-    main{
-        display: inline;
-    }
-    .contenedor-cajatexto{
-        position: relative;
-        left: 0;
-
-    }
-    .alerta{
-        left: 15px;
-    }
-    .section2{
-        right: 0;
-        left: 45px;
-        margin: 60px 0;
-    }
-.btn-encriptar{
-    margin: 20px 0;
-}
-}
 

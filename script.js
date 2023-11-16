@@ -3,6 +3,7 @@ var botonDesencriptar = document.querySelector(".btn-desencriptar");
 var munheco = document.querySelector(".contenedormunheco");
 var contenedor = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
+var contentResult = document.querySelector(".contenedor-resultado")
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
@@ -39,6 +40,7 @@ function recuperarTexto(){
 function ocultarAdelante(){
     munheco.classList.add("ocultar");
     contenedor.classList.add("ocultar");
+    contentResult.classList.remove("ocultar");
 }
 function encriptarTexto(mensaje){
     if(!validarTexto()) {

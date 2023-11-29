@@ -19,6 +19,9 @@ header nav ul {
   display: flex;
   gap: 0.3rem;
 }
+header nav ul li a img {
+  width: 30px;
+}
 
 main {
   display: flex;
@@ -182,18 +185,25 @@ footer {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px){
-    main{
-        padding: 1rem 2.4rem;
-    }
-    .contenedor-botones{
-        flex-direction: row;
-        padding: 0 2.4rem;
-    }
-    .alerta{
-        padding: 0 2.4rem;
-    }
-    .contenedor-cajatexto{
-        padding: 0 2.4rem;
-    }
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1rem 2.4rem;
+  }
+
+  header nav ul li a img {
+    width: 40px;
+  }
+  main {
+    padding: 1rem 2.4rem;
+  }
+  .contenedor-botones {
+    flex-direction: row;
+    padding: 0 2.4rem;
+  }
+  .alerta {
+    padding: 0 2.4rem;
+  }
+  .contenedor-cajatexto {
+    padding: 0 2.4rem;
+  }
 }
